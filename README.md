@@ -1,6 +1,6 @@
 # App name
 
-[brief description of the app]
+This is a demo app that was built to show Porter Airlines how the app can pull field totals, sum them, and use the values to display an approval threshold that can help with choosing a macro to apply to the ticket for next action.
 
 ### The following information is displayed:
 
