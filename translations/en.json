@@ -1,8 +1,8 @@
 {
   "app": {
-    "name": "Zen Tunes",
-    "short_description": "Play the famous zen tunes in your help desk.",
-    "long_description": "Play the famous zen tunes in your help desk and \n listen to the beats it has to offer.",
+    "name": "Porter Sidebar Demo",
+    "short_description": "A demo app to help with discussions about the sidebar app spec.",
+    "long_description": "This app will total values from specific ticket fields on specific ticket forms and put the values into other ticket fields.",
     "installation_instructions": "Simply click install."
   }
 }
