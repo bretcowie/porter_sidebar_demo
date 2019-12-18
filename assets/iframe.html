@@ -7,16 +7,47 @@
     https://garden.zendesk.com/css-components/bedrock/
     https://garden.zendesk.com/css-components/utilities/typography/
    -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/@zendeskgarden/css-buttons@7.0.13,npm/@zendeskgarden/css-utilities@4.4.2">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/@zendeskgarden/css-bedrock@7.0.21,npm/@zendeskgarden/css-utilities@4.3.0">
 </head>
 <body>
-  <h2 class="u-semibold u-fs-xl">Hello, World!</h2>
-  <script src="https://static.zdassets.com/zendesk_app_framework_sdk/2.0/zaf_sdk.min.js"></script>
-  <script>
-    // Initialise Apps framework client. See also:
-    // https://developer.zendesk.com/apps/docs/developer-guide/getting_started
-    var client = ZAFClient.init();
-    client.invoke('resize', { width: '100%', height: '200px' });
+  <script id="total-template" type="text/x-handlebars-template">
+    <table>
+    <tr>
+      <td>Total Claim Amount:</td>
+      <td>${{total_claim_amount}}</td>
+    </tr>
+    </table>
   </script>
+  <script id="approval-template" type="text/x-handlebars-template">
+    <table>
+    <tr>
+      <td>Approval Level Needed:</td>
+      <td>{{approval_level}}</td>
+    </tr>
+    </table>
+  </script>
+  <script id="toggle-template" type="text/x-handlebars-template">
+    <br><br>
+  <p>
+    <button id="toggle-btn" class="c-btn c-btn--full">Toggle {{toggle_state}}</button>
+  </p>
+  </script>
+  <script id="error-template" type="text/x-handlebars-template">
+    <p>{{status}} - {{statusText}} error.</p>
+  </script>
+  <script src="https://static.zdassets.com/zendesk_app_framework_sdk/2.0/zaf_sdk.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.3.3/dist/handlebars.min.js"></script>
+  <script src="main.js"></script>
+  <div id="total_content"></div>
+  <div id="approval_content"></div>
+  <div id="toggle_content"></div>
+  <div id="approval_button_content" style="display:none;">
+    <p style="padding: 20px 0px;">
+      <button id="reject-btn" class="c-btn c-btn--danger">Reject</button>
+      <button id="approve-btn" class="c-btn">Approve</button>
+    </p>
+  </div>
 </body>
 </html>
