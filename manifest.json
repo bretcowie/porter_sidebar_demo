@@ -13,5 +13,63 @@
     }
   },
   "version": "1.0",
-  "frameworkVersion": "2.0"
+  "frameworkVersion": "2.0",
+  "parameters": [
+  {
+    "name": "total_fields",
+    "type": "text",
+    "required": true,
+    "secure": false,
+    "default": "360029611774,360029612094,360029612174,360031196074"
+  },
+  {
+    "name": "currency_fields",
+    "type": "text",
+    "required": true,
+    "secure": false,
+    "default": "360029599933,360029600313,360029600533,360031189553"
+  },
+  {
+    "name": "claim_cad",
+    "type": "text",
+    "required": true,
+    "secure": false,
+    "default": 360031192413
+  },
+  {
+    "name": "claim_usd",
+    "type": "text",
+    "required": true,
+    "secure": false,
+    "default": 360030384953
+  },
+  {
+    "name": "claim_status",
+    "type": "text",
+    "required": true,
+    "secure": false,
+    "default": 360028491293
+  },
+  {
+    "name": "ticket_forms",
+    "type": "text",
+    "required": true,
+    "secure": false,
+    "default": "360001968354,360002121813"
+  },
+  {
+    "name": "batch_date_field_id",
+    "type": "text",
+    "required": true,
+    "secure": false,
+    "default": 360031255013
+  },
+  {
+    "name": "claim_approval_tag",
+    "type": "text",
+    "required": true,
+    "secure": false,
+    "default": "claim_waiting_finance_approval"
+  }
+]
 }

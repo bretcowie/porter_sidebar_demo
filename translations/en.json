@@ -3,6 +3,25 @@
     "name": "Porter Sidebar Demo",
     "short_description": "A demo app to help with discussions about the sidebar app spec.",
     "long_description": "This app will total values from specific ticket fields on specific ticket forms and put the values into other ticket fields.",
-    "installation_instructions": "Simply click install."
+    "installation_instructions": "Simply click install.",
+    "parameters": {
+      "total_fields": {
+        "label": "Total Field IDs (comma-separated)",
+        "helpText": "Order these from low to high"
+      },
+      "currency_fields": {
+        "label": "Currency Field IDs (comma-separated)",
+        "helpText": "Order these from low to high"
+      },
+      "claim_cad": {"label": "Total Claim Amount (CAD) Field ID"},
+      "claim_usd": {"label": "Total Claim Amount (USD) Field ID"},
+      "claim_status": {"label": "Claim Approval Status Field ID"},
+      "ticket_forms": {"label": "Supported Ticket Form IDs (comma-separated)"},
+      "batch_date_field_id": {"label": "Batch Date Field ID"},
+      "claim_approval_tag": {
+        "label": "Claim Approval Status Tag",
+        "helpText": "This is the tag for when the ticket has been approved to Finance."
+      }
+    }
   }
 }
